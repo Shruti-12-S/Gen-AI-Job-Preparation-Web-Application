@@ -18,9 +18,9 @@ This project simulates a **real-world SaaS product architecture** with secure au
 
 ---
 
-# ✨ Features
+## ✨ Features
 
-## 🔐 Authentication & Security
+### 🔐 Authentication & Security
 
 * JWT-Based Authentication
 * Secure Login & Registration
@@ -32,27 +32,27 @@ This project simulates a **real-world SaaS product architecture** with secure au
 
 ---
 
-## 🤖 AI-Powered Features
+### 🤖 AI-Powered Features
 
-### 📄 Resume Analysis
+#### 📄 Resume Analysis
 
 * Upload Resume PDF
 * Parse Resume Content
 * Extract Skills Automatically
 
-### 🎯 Skill Gap Detection
+#### 🎯 Skill Gap Detection
 
 * Compare Resume Skills with Job Description
 * Detect Missing Skills
 * Suggest Improvements
 
-### 🎤 AI Interview Preparation
+#### 🎤 AI Interview Preparation
 
 * Generate AI-Powered Interview Questions
 * Technical + HR Questions
 * Personalized Based on Resume & Job Role
 
-### 📝 ATS Resume Generation
+#### 📝 ATS Resume Generation
 
 * Generate ATS-Friendly Resume
 * AI-Based Resume Optimization
@@ -60,7 +60,7 @@ This project simulates a **real-world SaaS product architecture** with secure au
 
 ---
 
-## 📑 PDF Generation
+### 📑 PDF Generation
 
 * Professional Resume PDF Generation
 * Puppeteer Integration
@@ -68,7 +68,7 @@ This project simulates a **real-world SaaS product architecture** with secure au
 
 ---
 
-## 📊 Report Management
+### 📊 Report Management
 
 * Save Interview Reports
 * Recent Reports Feature
@@ -78,9 +78,9 @@ This project simulates a **real-world SaaS product architecture** with secure au
 
 ---
 
-# 🛠 Tech Stack
+## 🛠 Tech Stack
 
-## Frontend
+### Frontend
 
 * React.js
 * React Router
@@ -88,28 +88,28 @@ This project simulates a **real-world SaaS product architecture** with secure au
 * Axios
 * Vite
 
-## Backend
+### Backend
 
 * Node.js
 * Express.js
 * MongoDB Atlas
 * Mongoose
 
-## Authentication
+### Authentication
 
 * JWT (JSON Web Tokens)
 * Token Blacklisting
 
-## AI Integration
+### AI Integration
 
 * Gemini API
 
-## File Upload & PDF
+### File Upload & PDF
 
 * Multer
 * Puppeteer
 
-## Validation & Utilities
+### Validation & Utilities
 
 * Zod
 * dotenv
@@ -118,7 +118,7 @@ This project simulates a **real-world SaaS product architecture** with secure au
 
 ---
 
-# 🧠 What I Learned
+### 🧠 What I Learned
 
 Through this project, I gained hands-on experience in:
 
@@ -139,7 +139,7 @@ Through this project, I gained hands-on experience in:
 
 ---
 
-# 🧪 Testing
+## 🧪 Testing
 
 * Postman API Testing
 * Authentication Flow Testing
@@ -149,31 +149,31 @@ Through this project, I gained hands-on experience in:
 
 ---
 
-# 📸 Core Functionalities
+## 📸 Core Functionalities
 
-## 🔹 User Authentication
+### 🔹 User Authentication
 
 Secure JWT-based authentication with token blacklisting.
 
-## 🔹 Resume Processing
+### 🔹 Resume Processing
 
 Resume upload and AI-based skill extraction.
 
-## 🔹 AI Interview Preparation
+### 🔹 AI Interview Preparation
 
 Dynamic interview question generation using Gemini AI.
 
-## 🔹 ATS Resume Generator
+### 🔹 ATS Resume Generator
 
 Generate professional ATS-friendly resumes automatically.
 
-## 🔹 PDF Export
+### 🔹 PDF Export
 
 Export resumes as downloadable PDFs using Puppeteer.
 
 ---
 
-# 🌟 Production-Level Concepts Used
+## 🌟 Production-Level Concepts Used
 * REST API Architecture
 * MVC Pattern
 * Middleware Architecture
@@ -187,36 +187,39 @@ Export resumes as downloadable PDFs using Puppeteer.
 
 ---
 
-# Login Page
+## Login Page
 <img width="1919" height="912" alt="image" src="https://github.com/user-attachments/assets/46a0e0ef-08b9-4db6-920c-c2bc8cc9a076" />
 
-# Register Page
+## Register Page
 <img width="1914" height="911" alt="image" src="https://github.com/user-attachments/assets/be45456d-23e2-440c-a4c2-8ddebbe6a52c" />
 
-# UI Page
+## UI Page
 <img width="1918" height="912" alt="image" src="https://github.com/user-attachments/assets/8e33b46e-177b-418b-a574-61a1a4b512a4" />
 
-# Interview Report Page
+## Interview Report Page
 <img width="1919" height="915" alt="image" src="https://github.com/user-attachments/assets/95eeff58-6b76-4e6a-82b8-6cac33df8e7e" />
 
 
+### Live Demo
+https://gen-ai-job-preparation-web-application-1-a9wi.onrender.com
 
-# 👩‍💻 Developed By
 
-## Me @Shruti Shinde
+## 👩‍💻 Developed By
+
+### Me @Shruti Shinde
 
 Passionate Full Stack Developer & AI Enthusiast focused on building real-world scalable web applications using modern technologies.
 
 ---
 
-# 📬 Connect With Me
+## 📬 Connect With Me
 
-## LinkedIn
+### LinkedIn
 https://www.linkedin.com/in/shruti-shinde-p12?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2BIckL9sCR0eEkkIz3BrUYQ%3D%3D
 
 ---
 
-# ⭐ Final Note
+## ⭐ Final Note
 
 This project was built to simulate a real-world AI SaaS platform while strengthening my expertise in:
 
