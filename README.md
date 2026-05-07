@@ -7,12 +7,12 @@ The **Gen AI Job Preparation Web Application** is an intelligent platform design
 
 The application allows users to:
 
-✅ Upload resumes
-✅ Analyze job descriptions
-✅ Detect skill gaps
-✅ Generate AI-powered interview questions
-✅ Create ATS-Optimized resumes
-✅ Generate professional PDF resumes dynamically
+✅ Upload resumes <br>
+✅ Analyze job descriptions  <br>
+✅ Detect skill gaps <br>
+✅ Generate AI-powered interview questions <br>
+✅ Create ATS-Optimized resumes <br>
+✅ Generate professional PDF resumes dynamically <br>
 
 This project simulates a **real-world SaaS product architecture** with secure authentication, AI integrations, protected routes, scalable backend structure, and production-level workflows.
 
