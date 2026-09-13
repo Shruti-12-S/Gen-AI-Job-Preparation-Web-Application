@@ -332,7 +332,14 @@ async function generatePdfFromHtml(htmlContent) {
     let browser
 
     try {
-        browser = await puppeteer.launch()
+        browser = await puppeteer.launch({
+            headless: true,
+            args: [
+                "--no-sandbox",
+                "--disable-setuid-sandbox",
+                "--disable-dev-shm-usage"
+            ]
+        })
         const page = await browser.newPage()
         await page.setContent(htmlContent, { waitUntil: "networkidle0" })
 
@@ -356,14 +363,14 @@ async function generatePdfFromHtml(htmlContent) {
 async function generateResumePdf({ resume, selfDescription, jobDescription }) {
 
     const prompt = `
-Return ONLY JSON:
-{ "html": string }
+Return ONLY JSON with a single key "html":
+{ "html": "string containing full HTML" }
 
-Generate a professional ATS-friendly resume in HTML.
+Generate a clean, modern, professional ATS-friendly resume in full HTML with inline CSS styling.
 
-Resume: ${resume}
-Self Description: ${selfDescription}
-Job Description: ${jobDescription}
+Resume: ${resume || ""}
+Self Description: ${selfDescription || ""}
+Job Description: ${jobDescription || ""}
 `
 
     const response = await ai.models.generateContent({
@@ -386,7 +393,22 @@ Job Description: ${jobDescription}
     return generatePdfFromHtml(validated.data.html)
 }
 
+async function generateResumePdfWithRetry(input, retries = 2) {
+    let lastError
+
+    for (let i = 0; i <= retries; i++) {
+        try {
+            return await generateResumePdf(input)
+        } catch (err) {
+            lastError = err
+            console.log(`Resume PDF Retry ${i + 1}:`, err.message)
+        }
+    }
+
+    throw new Error(lastError?.message || "Failed to generate resume PDF after retries")
+}
+
 module.exports = {
     generateInterviewReportWithRetry,
-    generateResumePdf
+    generateResumePdf: generateResumePdfWithRetry
 }
