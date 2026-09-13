@@ -1,8 +1,10 @@
 import axios from "axios"
 
 
+const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.MODE === "development" ? "http://localhost:3000" : "https://gen-ai-job-preparation-web-application-cpvl.onrender.com")
+
 const api = axios.create({
-    baseURL: "https://gen-ai-job-preparation-web-application-cpvl.onrender.com",
+    baseURL: API_URL,
     withCredentials: true
 })
 
